@@ -22,8 +22,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-        with:
-            ref: demo2
+       
           
       - run: |
           date > out_put.txt
