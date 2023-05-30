@@ -34,14 +34,14 @@ jobs:
           git push
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
-          with:
-            name: date
-            path: out_put.txt
-            retention-days: 3
+        with:
+          name: date
+          path: out_put.txt
+          retention-days: 3
       - name: Download a single artifact
         uses: actions/download-artifact@v3
-          with:
-            name: date 
+        with:
+          name: date 
       - name: Run a multi line script
         run: |
           ls -ltr
